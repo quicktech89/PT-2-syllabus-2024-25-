@@ -1,4 +1,4 @@
-let isMaintenanceMode = true; // Toggle this to enable/disable maintenance
+let isMaintenanceMode = false; // Toggle this to enable/disable maintenance
 
 function handleDownload() {
     const successModal = document.getElementById('success-modal');
