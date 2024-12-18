@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PT-2 Exam Portal</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="scripts.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo-container">
+            <img src="logo.png" alt="Group Logo" class="group-logo">
+            <h1>Class 9th Group</h1>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Syllabus Section -->
+        <section class="syllabus">
+            <h2>Download PT-2 Syllabus</h2>
+            <div class="button-container">
+                <button id="cta-button" class="cta-button" onclick="handleDownload()">Download Syllabus</button>
+            </div>
+        </section>
+
+        <!-- Exam Date Section -->
+        <section class="exam-date">
+            <h3>PT-2 Exam Date: <span class="highlight">NA</span></h3>
+        </section>
+
+        <!-- Notice Board Section -->
+        <section class="notice-board">
+            <h3>Notice Board</h3>
+            <div class="notice-container">
+                <ul id="notice-list">
+                    <li>Exam schedule will be released soon.</li>
+                    <li>Prepare for syllabus updates coming this Friday.</li>
+                    <li>Group meeting scheduled for Saturday, 4 PM.</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <!-- Success Modal -->
+    <div id="success-modal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <p id="modal-message"></p>
+        </div>
+    </div>
+</body>
+</html>
